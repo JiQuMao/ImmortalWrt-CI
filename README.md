@@ -1,5 +1,10 @@
 # OpenWRT-CI
 
+QCA-ALL为输出固件
+WRT-CORE 为调用编译核心
+
+
+
 官方版：
 
 https://github.com/immortalwrt/immortalwrt.git
