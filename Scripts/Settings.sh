@@ -28,11 +28,11 @@ fi
 DTS_PATH="./target/linux/qualcommax/files/arch/arm64/boot/dts/qcom/"
 if [[ "${WRT_TARGET^^}" == *"QUALCOMMAX"* ]]; then
 	#取消nss相关feed
-	echo "CONFIG_FEED_nss_packages=n" >> ./.config
-	echo "CONFIG_FEED_sqm_scripts_nss=n" >> ./.config
+	#echo "CONFIG_FEED_nss_packages=n" >> ./.config
+	#echo "CONFIG_FEED_sqm_scripts_nss=n" >> ./.config
 	#开启sqm-nss插件
-	echo "CONFIG_PACKAGE_luci-app-sqm=n" >> ./.config
-	echo "CONFIG_PACKAGE_sqm-scripts-nss=n" >> ./.config
+	#echo "CONFIG_PACKAGE_luci-app-sqm=n" >> ./.config
+	#echo "CONFIG_PACKAGE_sqm-scripts-nss=n" >> ./.config
 	#设置NSS版本
 	echo "CONFIG_NSS_FIRMWARE_VERSION_12_5=y" >> ./.config
 	
